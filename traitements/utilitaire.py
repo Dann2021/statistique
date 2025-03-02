@@ -195,10 +195,10 @@ def cumules(liste, cat):
             s += v
             fc.append(s)
 
-        i = 0
+        """i = 0
         while i < len(f):
             fd.append(fc[-1])
-            fc[-1] -= f[i]
+            fc[-1] -= f[i]"""
 
         return f, np.array(fc), np.array(fd)
 
@@ -258,6 +258,7 @@ def dataframe_dynamique(valeur_retour, a, b, effectif, amp, ai, ec, centre):
         "b": b,
         "n": effectif,
         "n+": nc,
+        "n-": nd,
         "f": f,
         "f+": fc,
         "amplitude": amp,
